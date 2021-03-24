@@ -30,8 +30,12 @@
     "extends": [
       "react-app",
       "react-app/jest"
+
     ]
   },
+ "engines":{
+  "node": "latest" 
+ },
   "browserslist": {
     "production": [
       ">0.2%",
