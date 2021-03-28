@@ -8,17 +8,17 @@
     "@testing-library/user-event": "^12.8.0",
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
+    "node": "latest",
     "node-sass": "^5.0.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.1",
+    "react-bootstrap-slider": "^3.0.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.0",
-    "node": "latest"
-    
+    "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,12 +30,11 @@
     "extends": [
       "react-app",
       "react-app/jest"
-
     ]
   },
- "engines":{
-  "node": "latest" 
- },
+  "engines": {
+    "node": "latest"
+  },
   "browserslist": {
     "production": [
       ">0.2%",

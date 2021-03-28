@@ -1,6 +1,8 @@
 import React, {component} from 'react';
 import {Link} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
+import ReactBootstrapSlider from 'react-bootstrap-slider';
+
 class AboutUs extends React.Component{
     render(){
         return(

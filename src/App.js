@@ -3,13 +3,11 @@ import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer';
-import Header from './components/Header';
 import TechnicalTraining from './pages/TechnicalTraining';
 import WebsiteDevelopment from './pages/WebsiteDevelopment';
 import BlockchainConsulting from './pages/BlockchainConsulting';
 import SoftwareDevelopment from './pages/SoftwareDevelopment';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import { useEffect } from 'react';
 
 
 
@@ -27,7 +25,7 @@ function App() {
           <Route path='/websitedevelopment' component={WebsiteDevelopment} />
           <Route path='/blockchainconsulting' component={BlockchainConsulting} />
           <Route path='/softwaredevelopment' component={SoftwareDevelopment} />
-        </Switch>
+       </Switch>
        <Footer/>
      </Router>
      </div>
