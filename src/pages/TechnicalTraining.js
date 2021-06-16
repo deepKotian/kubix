@@ -9,7 +9,7 @@ class TechnicalTraining extends React.Component{
         return(
         <div>
             <Helmet>
-                <title>Kubixsquare - Technical Training</title>
+                <title>KubixSquare - Technical Training</title>
             </Helmet> 
                      
          <div id="header-holder" class="inner-header hosting-page">

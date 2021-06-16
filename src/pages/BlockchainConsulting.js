@@ -7,7 +7,7 @@ class BlockchainConsulting extends React.Component{
         return(
         <div>
             <Helmet>
-                <title>Kubixsquare - Bloackchain Consulting</title>
+                <title>KubixSquare - Bloackchain Consulting</title>
             </Helmet> 
                      
             <div id="header-holder" class="inner-header hosting-page">

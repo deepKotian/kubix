@@ -337,6 +337,8 @@ a, input[type="submit"] {
     background-color: #ffffff;
     padding-top: 15px;
     text-align: left;
+    padding-right: 200px !important;
+    padding-left: 150px !important; 
 }
 
 #header-holder .bg-animation {

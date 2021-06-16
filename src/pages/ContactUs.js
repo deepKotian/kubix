@@ -7,7 +7,7 @@ class ContactUs extends React.Component{
         return(
         <div>
             <Helmet>
-                <title>Kubixsquare - Contact Us</title>
+                <title>KubixSquare - Contact Us</title>
             </Helmet> 
                      
             <div id="header-holder" className="inner-header hosting-page">

@@ -7,7 +7,7 @@ class SoftwareDevelopment extends React.Component{
         return(
             <div>
                 <Helmet>
-                <title>Kubixsquare - Software Development</title>
+                <title>KubixSquare - Software Development</title>
                 </Helmet> 
                      
                 <div id="header-holder" class="inner-header hosting-page">

@@ -7,7 +7,7 @@ class Events extends React.Component{
           return(
             <div>
                 <Helmet>
-                <title>Kubixsquare - Events</title>
+                <title>KubixSquare - Events</title>
                 </Helmet> 
                      
                 <div id="header-holder" className="inner-header hosting-page">

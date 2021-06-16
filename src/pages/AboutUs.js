@@ -1,14 +1,16 @@
 import React, {component} from 'react';
 import {Link} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
-import ReactBootstrapSlider from 'react-bootstrap-slider';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class AboutUs extends React.Component{
     render(){
         return(
             <div>
             <Helmet>
-                <title>Kubixsquare - About Us</title>
+                <title>KubixSquare - About Us</title>
             </Helmet> 
                      
 
@@ -136,20 +138,22 @@ class AboutUs extends React.Component{
                 </div>
                 <div className="col-md-6 company-info-holder">
                     <h4>About KubixSquare</h4>
-                    {/* <div className="info-slider">
+                    <Slider>
+                    {/* <div className="info-slider"> */}
                          <div className="details-holder">
                                 <p>We are a team of experienced professionals who train students and corporate people on Latest technologies like Blockchain, Frontend technologies, Backend technologies, AI and ML etc. which are widely used in industry today.</p>
-                            
+                            </div>
                            <div className="details-holder">
                               <p>We achieve our goals by collaborating with Institutes and by providing them Industry level training by our industry experts.We also provide a wide range of service to our clients from WebApp development with interactive analytics.</p>
                             </div>
                            <div className="details-holder">
                                 <p>Blockchain Consulting to name a few, with only goal to provide Quality and Best service at a reasonable price, with our expert developers we always thrive to provide our clients with the best finished products along with best in className support.</p>
                             </div>
+                    </Slider>
                         
-                        </div>
-                     </div> */}
-                     <div class="info-slider slick-initialized slick-slider slick-dotted" role="toolbar">
+                    
+                     
+                     {/* <div class="info-slider slick-initialized slick-slider slick-dotted" role="toolbar">
                         <div aria-live="polite" class="slick-list draggable">
                             <div class="slick-track" style={{width:'2160px',opacity:'1',transform:'translate3d(0px, 0px, 0px)'}} role="listbox">
                                 <div class="slick-slide" data-slick-index="0" aria-hidden="true" style={{width:'720px'}} tabindex="-1" role="option" aria-describedby="slick-slide00">
@@ -173,7 +177,7 @@ class AboutUs extends React.Component{
                             <li class="slick-active" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li>
                             <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01" class=""><button type="button" data-role="none" role="button" tabindex="0">2</button></li>
                             <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02" class=""><button type="button" data-role="none" role="button" tabindex="0">3</button></li>
-                        </ul>
+                        </ul> */}
                         </div>    
                    </div>
                 </div>
@@ -267,7 +271,7 @@ class AboutUs extends React.Component{
     </div> } */}
 </div>
 </div>
-</div>
+
 
         )
     }

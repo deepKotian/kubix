@@ -7,7 +7,7 @@ class WebsiteDevelopment extends React.Component{
         return(
        <div>
            <Helmet>
-                <title>Kubixsquare - Website Development</title>
+                <title>KubixSquare - Website Development</title>
             </Helmet> 
                      
        <div id="header-holder" class="inner-header hosting-page">

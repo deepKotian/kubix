@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
-import ReactBootstrapSlider from 'react-bootstrap-slider';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class Home extends React.Component{
     render(){
         return(
             <div>
                 <Helmet>
-                <title>Kubixsquare - Home</title>
+                <title>KubixSquare - Home</title>
                 </Helmet> 
                      
     <body>
@@ -487,6 +489,7 @@ class Home extends React.Component{
             <div className="row">
                 <div className="col-xs-12">
                     <div id="testimonials-slider">
+                    <Slider>
                         <div>
                             <div className="details-holder">
                                 <img className="photo" src="assets/images/vidyavardhini.jpg" alt=""/>
@@ -495,7 +498,7 @@ class Home extends React.Component{
                                 <p>The blockchain technology SDP (Student Development Program) conducted by KubixSquare gave all the participants to gain the knowledge on blockchain and work on their projects. Hands-on experience that was conducted was in line with our expectations and was rated has much valued by the participants. The participants were impressed with the whole session and specially with hands-on experiences that they had. Thankyou so much for conducting such a wonderful training. We as an organizing committee appreciate the efforts put by you, and responsiveness and promptness for the training and the betterment of students.</p>
                             </div>
                         </div>
-                        <br/>
+                        
                         <div>
                             <div className="details-holder">
                                 <img className="photo" src="assets/images/saintjohn.png" alt=""/>
@@ -504,6 +507,7 @@ class Home extends React.Component{
                                 <p>On behalf of the team MegaHack 2020 at St. John College of Engineering and Management (SJCEM), Palghar, we would like to offer our sincere thanks and gratitude to the entire team of KubixSquare for accepting our invitation and taking out time from their busy schedule and judging the event. We truly appreceiate the level of exposure that was offered to our participants in terms of skills, expertise and knowledge which were indeed liked by our participants. Your rigorous feedback played a major role in deciding the winners.</p>
                             </div>
                         </div>
+                        </Slider>
                     </div>
                 </div>
             </div>
