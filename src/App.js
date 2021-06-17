@@ -8,14 +8,15 @@ import WebsiteDevelopment from './pages/WebsiteDevelopment';
 import BlockchainConsulting from './pages/BlockchainConsulting';
 import SoftwareDevelopment from './pages/SoftwareDevelopment';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-
-
+import ScrollRestoration from 'react-scroll-restoration';
+const port = process.env.PORT || 8000; 
 
 function App() {
   
   return (
     <div>
       <Router>
+       <ScrollRestoration />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/aboutus' component={AboutUs} />
@@ -32,7 +33,5 @@ function App() {
      
   );
 }
-
-
 
 export default App;
