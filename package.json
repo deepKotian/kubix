@@ -8,8 +8,8 @@
     "@testing-library/user-event": "^12.8.0",
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
-    "node": "^16.3.0",
-    "node-sass": "^5.0.0",
+    "node": "^14.15.4",
+    "node-sass": "^6.0.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.1",
@@ -35,7 +35,7 @@
     ]
   },
   "engines": {
-    "node": "^16.3.0"
+    "node": "^14.15.4"
   },
   "browserslist": {
     "production": [
