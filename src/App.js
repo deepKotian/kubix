@@ -9,7 +9,7 @@ import BlockchainConsulting from './pages/BlockchainConsulting';
 import SoftwareDevelopment from './pages/SoftwareDevelopment';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import ScrollRestoration from 'react-scroll-restoration';
-const port = process.env.PORT || 8000; 
+const port = process.env.PORT || 3000; 
 
 function App() {
   

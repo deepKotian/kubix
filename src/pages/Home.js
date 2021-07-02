@@ -29,23 +29,23 @@ class Home extends React.Component{
                 <div className="row">
                     <div className="col-md-12">
                         <div className="navbar-header">
-                            <button aria-expanded="false" type="button" className="navbar-toggle collapsed"
-                                data-toggle="collapse" data-target="#bs">
+                            
+                             <button aria-expanded="false" type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs">
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                            </button>
+                                <span className="icon-bar"></span> 
+                            </button> 
+                           
                             <Link to="/" class="logo-holder" >
                                 <div className="logo" style={{width:'165px', height:'38px'}}></div>
                            </Link>
                         </div>
-                        <div style={{height: '1px'}} role="main" aria-expanded="false" className="navbar-collapse collapse"
-                            id="bs">
-                            <ul className="nav navbar-nav navbar-right">
+                        <div style={{height: '1px'}} role="main" aria-expanded="false" className="navbar-collapse" id="bs">
+                            <ul className="nav navbar-nav navbar-right" >
                                 <li><Link to="/">Home</Link></li>
                                 <li><Link to="/aboutus">About us</Link></li>
                                 <li className="dropdown unity-menu">
-                                    <a href="#">Services <i className="fas fa-caret-down"></i></a>
+                                    <a href="#">Services<i className="fas fa-caret-down"></i></a>
                                     <ul className="dropdown-menu dropdown-unity">
                                         <li>
                                             <Link to="/technicaltraining" className="unity-link" >

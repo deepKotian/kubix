@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
  
 class AboutUs extends React.Component{
     render(){
-        var settings = {
+        var setting = {
             dots: true,
             dotsClass: "slick-dots li",
             arrows: false,
@@ -147,7 +147,7 @@ class AboutUs extends React.Component{
                 </div>
                 <div className="col-md-6 company-info-holder">
                     <h4>About KubixSquare</h4>
-                    <Slider {...settings}>
+                    <Slider {...setting}>
                     {/* <div className="info-slider"> */}
                          <div className="details-holder">
                                 <p>We are a team of experienced professionals who train students and corporate people on Latest technologies like Blockchain, Frontend technologies, Backend technologies, AI and ML etc. which are widely used in industry today.</p>

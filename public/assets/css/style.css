@@ -56,11 +56,11 @@ a, input[type="submit"] {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    text-align: left !important;
+    
 }
 
 .slick-dots li {
@@ -68,19 +68,27 @@ a, input[type="submit"] {
     text-indent: -9999px;
     white-space: nowrap;
     border: 0;
-    width: 8px;
-    height: 8px;
+    width: 8px !important;
+    height: 8px !important;
     border-radius: 8px;
     background-color: #ffffff;
     opacity: 0.5;
     margin-left: 5px;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) ;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    text-align: left !important;
 }
 
 .slick-dots li.slick-active {
     opacity: 1;
 }
+
+.slick-dots li.slick-active button:before {
+    opacity: .075 !important;
+    color:  #007bff !important;
+    content: '' !important;
+    } 
+
 
 .row-title {
     text-align: center;
@@ -337,8 +345,8 @@ a, input[type="submit"] {
     background-color: #ffffff;
     padding-top: 15px;
     text-align: left;
-    padding-right: 200px !important;
-    padding-left: 150px !important; 
+    /* padding-right: 200px !important;
+    padding-left: 150px !important;  */
 }
 
 #header-holder .bg-animation {
@@ -394,24 +402,24 @@ a, input[type="submit"] {
     background-color: transparent;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 500px) {
     #header-holder:not(.inner-header):before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 60%;
-        background-color: #1886eb;
-        -webkit-transform: skewY(-10deg);
-        -moz-transform: skewY(-10deg);
-        -ms-transform: skewY(-10deg);
-        transform: skewY(-10deg);
-        -webkit-transform-origin: left top;
-        -moz-transform-origin: left top;
-        -ms-transform-origin: left top;
-        transform-origin: left top;
-        z-index: -1;
+        content: "" !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        height: 60% !important;
+        background-color: #1886eb !important;
+        -webkit-transform: skewY(-10deg) !important;
+        -moz-transform: skewY(-10deg) !important;
+        -ms-transform: skewY(-10deg) !important;
+        transform: skewY(-10deg) !important;
+        -webkit-transform-origin: left top !important;
+        -moz-transform-origin: left top !important;
+        -ms-transform-origin: left top !important;
+        transform-origin: left top !important;
+        z-index: -1 !important;
     }
 
     #header-holder.main-header:before {
@@ -459,7 +467,7 @@ svg.logo text {
 }
 
 .navbar-nav {
-    display: flex;
+    display: flex !important;
     flex-direction:row !important;
     float: none;
     
@@ -594,7 +602,7 @@ svg.logo text {
 }
 
 .dropdown-menu:before {
-    position: absolute;
+    position: absolute !important;
     content: "";
     top: -7px;
     right: 40px;
@@ -625,7 +633,7 @@ svg.logo text {
 .dropdown-menu.dropdown-mega {
     z-index: 9998;
     padding: 20px 0;
-    margin-top: 12px !important;
+    margin-top: 12px ;
     display: block;
     -webkit-transform-origin: 50% 0%;
     -moz-transform-origin: 50% 0%;
@@ -7076,11 +7084,12 @@ button.btn.btn-link.collapsed{
 
     .navbar-toggle {
         margin-right: 0;
+        
     }
 
     #nav .dropdown-menu {
         display: block;
-        position: relative;
+        position: relative !important;
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
@@ -7109,7 +7118,7 @@ button.btn.btn-link.collapsed{
         text-align: center;
         
     }
-
+    
     .navbar-default .navbar-nav > li > a.login-button {
         margin-left: 0;
     }
@@ -7575,3 +7584,9 @@ label.custom-control-label{
         margin-top: 15px;
     }
 }
+
+@media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column!important;
+    }
+  }
