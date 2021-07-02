@@ -30,7 +30,8 @@ class Home extends React.Component{
                     <div className="col-md-12">
                         <div className="navbar-header">
                             
-                             <button aria-expanded="false" type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs">
+                             <button aria-expanded="false" type="button" className="navbar-toggle collapsed" 
+                             data-toggle="collapse" data-target="#bs">
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span> 
@@ -40,7 +41,7 @@ class Home extends React.Component{
                                 <div className="logo" style={{width:'165px', height:'38px'}}></div>
                            </Link>
                         </div>
-                        <div style={{height: '1px'}} role="main" aria-expanded="false" className="navbar-collapse" id="bs">
+                        <div style={{height: '1px'}} role="main" aria-expanded="false" className="navbar-collapse collapse" id="bs">
                             <ul className="nav navbar-nav navbar-right" >
                                 <li><Link to="/">Home</Link></li>
                                 <li><Link to="/aboutus">About us</Link></li>
