@@ -7,6 +7,11 @@ import Slider from "react-slick";
 
 class Home extends React.Component{
     render(){
+        var setting = {
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
         return(
             <div>
                 <Helmet>
@@ -490,7 +495,7 @@ class Home extends React.Component{
             <div className="row">
                 <div className="col-xs-12">
                     <div id="testimonials-slider">
-                    <Slider>
+                    <Slider {...setting}>
                         <div>
                             <div className="details-holder">
                                 <img className="photo" src="assets/images/vidyavardhini.jpg" alt=""/>
