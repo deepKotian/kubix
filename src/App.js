@@ -1,6 +1,8 @@
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
+import Portfolio from './pages/Portfolio';
+import Event from './pages/Event';
 import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer';
 import TechnicalTraining from './pages/TechnicalTraining';
@@ -21,6 +23,8 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route path='/aboutus' component={AboutUs} />
           <Route path='/events' component={Events} />
+          <Route path='/portfolio' component={Portfolio} />
+          <Route path='/event' component={Event} />
           <Route path='/contactus' component={ContactUs} />
           <Route path='/technicaltraining' component={TechnicalTraining} />
           <Route path='/websitedevelopment' component={WebsiteDevelopment} />

@@ -1,11 +1,46 @@
-import React, {Component,useState,useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import {Helmet} from 'react-helmet';
 import {Link} from 'react-router-dom';
+import axios from "axios";
 
+/* var i=0;
+        const Event = () => {
+          const [eventText,setEventText] = useState("");
+          const [eventTitle,setEventTitle] = useState("");
+          
+          const eventData = async () => {
+            try {
+              const res = await axios.get("api.js");
+              
+              setEventText(res.data[i].id);
+              setEventTitle(res.data[i].name);
+        
+              i=i+1;
+            
+            } catch (error) {
+              console.log(error);
+            }
+          };
+        
+          useEffect(() => {
+            eventData();
+          }, []); */
+          const Event = () => {
 
-class Events extends React.Component{
-      render(){
-          return(
+            const [users, setUsers] = useState([]);
+            
+            const getUsers = async () => {
+                     const response = await fetch('https://79715be9-2162-4b33-a1d3-d7aea63e97bf.mock.pstmn.io');
+                     
+                     setUsers(await response.json());
+                
+            }
+        
+            useEffect(() => {
+                getUsers();
+            }, []);
+
+        return (
             <div>
                 <Helmet>
                 <title>KubixSquare - Events</title>
@@ -28,7 +63,8 @@ class Events extends React.Component{
                                 <div className="logo" style={{width:'165px', height:'38px'}}></div>
                             </Link>
                         </div>
-                        <div style={{height: '1px'}} role="main" aria-expanded="false" className="navbar-collapse collapse" id="bs">
+                        <div style={{height: '1px'}} role="main" aria-expanded="false" className="navbar-collapse collapse"
+                            id="bs">
                             <ul className="nav navbar-nav navbar-right">
                                 <li><Link to="/">Home</Link></li>
                                 <li><Link to="/aboutus">About us</Link></li>
@@ -98,7 +134,6 @@ class Events extends React.Component{
                                     </ul>
                                 </li>
                                 <li><Link to="/events">Events</Link></li>
-                                <li><Link to="/portfolio">Portfolio</Link></li>
                                 <li><Link to="/contactus">Contact us</Link></li>
                                 <li className="support-button-holder support-dropdown">
                                     <a className="support-button" href="#">Support</a>
@@ -143,17 +178,26 @@ class Events extends React.Component{
 <div id="articles" className="container-fluid">
     <div className="container">
         <div className="row">
-            <div className="col-sm-6 col-md-4">
-                <div className="article-summary">
-                    <div className="article-img"><img src="assets/images/event1.jpg" alt="" /></div>
-                    <div className="article-details">
-                        <div className="article-title"><a href="#">St. Francis Institute of Technology</a></div>
-                        <div className="article-text">28/09/2019 - 29/09/2019 : 2 day interactive Workshop on Blockchain and its Application with hands on Training.</div>
-                    <br/>
-                    </div>
-                </div>
-            </div>
-           <div className="col-sm-6 col-md-4">
+            
+                {
+                  users.map((curElem) => {
+                     return(
+                         <div>
+                        <div className="col-sm-6 col-md-4">
+                        <div className="article-summary">
+                        <div className="article-img"><img src={curElem.image} alt="" /></div>
+                        <div className="article-details">
+                        <div className="article-title"><a href="#">{curElem.title}</a></div>
+                        <div className="article-text">{curElem.text}</div>
+                        <br/>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                     ) 
+                  })
+}
+           {/* <div className="col-sm-6 col-md-4">
                 <div className="article-summary">
                     <div className="article-img"><img src="assets/images/event3.jpg" alt="" /></div>
                     <div className="article-details">
@@ -172,20 +216,21 @@ class Events extends React.Component{
                         </div><br/>
                     </div>
                 </div>
-            </div> 
-            <div className="col-md-12">
+            </div>   */}
+              {/* div className="col-md-12">
                 <div className="pagination">
                     <span className="current page-number">1</span>
-                    {/* <!-- <a className="page-number" href="#">2</a> --> */}
+                     <!-- <a className="page-number" href="#">2</a> --> 
                     <a className="next page-number" href="#"><i className="fas fa-chevron-right"></i></a>
                 </div>
-            </div>
+            </div>   */}
         </div>  
     </div>
 </div>
-</div>  
-          )
-      }
-}
+</div>
 
-export default Events;
+
+);
+};
+
+export default Event;

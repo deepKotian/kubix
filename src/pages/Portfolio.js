@@ -3,12 +3,12 @@ import {Helmet} from 'react-helmet';
 import {Link} from 'react-router-dom';
 
 
-class Events extends React.Component{
+class Portfolio extends React.Component{
       render(){
           return(
             <div>
                 <Helmet>
-                <title>KubixSquare - Events</title>
+                <title>KubixSquare - Portfolio</title>
                 </Helmet> 
                      
                 <div id="header-holder" className="inner-header hosting-page">
@@ -118,7 +118,7 @@ class Events extends React.Component{
         <div className="container">
             <div className="row">
                 <div className="col-md-12 text-center">
-                    <div className="page-title">Events</div>
+                    <div className="page-title">Portfolio</div>
                     <div id="page-icon">
                         <div className="pricing-icon">
                             <img src="assets/images/planner.svg" alt=""/>
@@ -134,7 +134,7 @@ class Events extends React.Component{
     <div className="container">
         <div className="row">
             <div className="col-md-12">
-                <div className="info-text grey-text">Our Latest and Upcoming Events Update.</div>
+                <div className="info-text grey-text">Our Projects.</div>
             </div>
         </div>
     </div>
@@ -145,15 +145,15 @@ class Events extends React.Component{
         <div className="row">
             <div className="col-sm-6 col-md-4">
                 <div className="article-summary">
-                    <div className="article-img"><img src="assets/images/event1.jpg" alt="" /></div>
+                    {/* <div className="article-img"><img src="assets/images/event1.jpg" alt="" /></div> */}
                     <div className="article-details">
-                        <div className="article-title"><a href="#">St. Francis Institute of Technology</a></div>
-                        <div className="article-text">28/09/2019 - 29/09/2019 : 2 day interactive Workshop on Blockchain and its Application with hands on Training.</div>
+                        <div className="article-title"><a href="#">Kubixsquare</a></div>
+                        <div className="article-text"><a href="https://kubixsquare.com/index.html">Click Here</a></div>
                     <br/>
                     </div>
                 </div>
             </div>
-           <div className="col-sm-6 col-md-4">
+           {/* <div className="col-sm-6 col-md-4">
                 <div className="article-summary">
                     <div className="article-img"><img src="assets/images/event3.jpg" alt="" /></div>
                     <div className="article-details">
@@ -172,7 +172,7 @@ class Events extends React.Component{
                         </div><br/>
                     </div>
                 </div>
-            </div> 
+            </div> */} 
             <div className="col-md-12">
                 <div className="pagination">
                     <span className="current page-number">1</span>
@@ -188,4 +188,4 @@ class Events extends React.Component{
       }
 }
 
-export default Events;
+export default Portfolio;

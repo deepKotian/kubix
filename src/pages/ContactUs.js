@@ -98,6 +98,7 @@ class ContactUs extends React.Component{
                                     </ul>
                                 </li>
                                 <li><Link to="/events" >Events</Link></li>
+                                <li><Link to="/portfolio">Portfolio</Link></li>
                                 <li><Link to="/contactus">Contact us</Link></li>
                                 <li className="support-button-holder support-dropdown">
                                     <a className="support-button" href="#">Support</a>

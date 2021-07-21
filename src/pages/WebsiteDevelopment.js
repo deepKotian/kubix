@@ -98,6 +98,7 @@ class WebsiteDevelopment extends React.Component{
                                     </ul>
                                 </li>
                                 <li><Link to="events">Events</Link></li>
+                                <li><Link to="/portfolio">Portfolio</Link></li>
                                 <li><Link to="/contactus">Contact us</Link></li>
                                 <li class="support-button-holder support-dropdown">
                                     <a class="support-button" href="#">Support</a>

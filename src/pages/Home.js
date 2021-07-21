@@ -116,6 +116,8 @@ class Home extends React.Component{
                                     </ul>
                                 </li>
                                 <li><Link to="/events">Events</Link></li>
+                                <li><Link to="/event">Event</Link></li>
+                                <li><Link to="/portfolio">Portfolio</Link></li>
                                 <li><Link to="/contactus">Contact us</Link></li>
                                 <li className="support-button-holder support-dropdown">
                                     <a className="support-button" href="#">Support</a>
@@ -369,6 +371,7 @@ class Home extends React.Component{
             </div>
             <div className="row rtl-cols">
                 <div className="col-sm-12 col-md-6">
+                   
                     <div id="features-links-holder">
                         <div className="icons-axis">
                             <img src="assets/images/kubix-logo.jpg" alt=""/>
@@ -419,7 +422,9 @@ class Home extends React.Component{
                             <div className="feature-title">Maintenance Support</div>
                         </div>
                     </div>
+                    
                 </div>
+              
                 <div className="col-sm-12 col-md-6">
                     <div id="features-holder">
                         <div className="feature-box feature-d1 show-details">
